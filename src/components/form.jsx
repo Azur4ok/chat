@@ -37,7 +37,7 @@ export const Form = () => {
         className="text-input"
         name=""
         id=""
-        cols="200"
+        cols="210"
         rows="5"
       />
       <button ref={btnRef} onClick={handleClick} className="send-button">

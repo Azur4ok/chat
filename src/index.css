@@ -14,16 +14,26 @@ code {
 
 body {
   background-color: #000;
+  height: 100%;
 }
 
 .wrapper {
-  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
 }
 
 .form-container {
   display: flex;
-  position: relative;
-  top: 600px;
+  position: sticky;
+  top: 500px;
+  bottom: 0;
+  background-color: #000;
 }
 
 .text-input {
@@ -35,17 +45,17 @@ body {
 }
 
 .send-button {
-  margin: 1px 0 9px 10px;
+  margin: 1px 0 8px 10px;
   flex: 0 1 auto;
-  width: 10%;
   border-radius: 10px;
-
+  width: 10%;
 }
 
 .chat {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .message-box {
@@ -57,4 +67,33 @@ body {
   font-size: 17px;
   color: #fff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .send-button {
+    margin: 1px 20px 9px 10px;
+    flex: 1 1 auto;
+    border-radius: 10px;
+    width: 25%;
+  }
+
+  .text-input {
+    background-color: #252526;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 0 10px 50px;
+    flex: 1 1 auto;
+    width: 70%;
+  }
+
+  .message-box {
+    border-radius: 25px;
+    margin: 20px 20px 10px 0;
+    flex: 1 1 auto;
+    background-color: #252526;
+    padding: 20px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+  }
 }

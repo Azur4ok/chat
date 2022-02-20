@@ -11,3 +11,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-color: #000;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.form-container {
+  display: flex;
+  position: relative;
+  top: 600px;
+}
+
+.text-input {
+  background-color: #252526;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0 0 10px 50px;
+  flex: 0 1 auto;
+}
+
+.send-button {
+  margin: 1px 0 9px 10px;
+  flex: 0 1 auto;
+  width: 10%;
+  border-radius: 10px;
+
+}
+
+.chat {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.message-box {
+  border-radius: 25px;
+  margin: 20px 100px 10px 0;
+  flex: 0 1 auto;
+  background-color: #252526;
+  padding: 20px;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+}

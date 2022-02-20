@@ -43,6 +43,7 @@ body {
   color: #fff;
   margin: 0 0 10px 50px;
   flex: 0 1 auto;
+  border: none;
 }
 
 .send-button {
@@ -50,6 +51,9 @@ body {
   flex: 0 1 auto;
   border-radius: 15px;
   width: 10%;
+  color: #fff;
+  background-color: #252526;
+  border: none;
 }
 
 .chat {
@@ -61,7 +65,7 @@ body {
 
 .message-box {
   border-radius: 25px;
-  margin: 20px 100px 10px 0;
+  margin: 20px 10px 10px 0;
   background-color: #252526;
   padding: 20px;
   font-size: 17px;

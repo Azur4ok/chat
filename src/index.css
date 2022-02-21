@@ -60,7 +60,7 @@ body {
   align-items: flex-end;
   flex-direction: column;
   flex: 1 1 auto;
-  min-height: 76vh;
+  min-height: 74vh;
 }
 
 .message-box {
@@ -97,7 +97,7 @@ body {
   }
 
   .chat {
-    min-height: 66vh;
+    min-height: 65vh;
   }
 
   .message-box {

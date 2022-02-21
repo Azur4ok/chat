@@ -14,16 +14,26 @@ code {
 
 body {
   background-color: #000;
-}
-
-.wrapper {
   height: 100%;
 }
 
-.form-container {
+.wrapper {
+  min-height: 100%;
   display: flex;
-  position: relative;
-  top: 600px;
+  flex-direction: column;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+}
+
+.form-container {
+  margin-top: 10px;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  background-color: #000;
 }
 
 .text-input {
@@ -32,29 +42,72 @@ body {
   color: #fff;
   margin: 0 0 10px 50px;
   flex: 0 1 auto;
+  border: none;
 }
 
 .send-button {
-  margin: 1px 0 9px 10px;
+  margin: 1px 10px 8px 10px;
   flex: 0 1 auto;
+  border-radius: 15px;
   width: 10%;
-  border-radius: 10px;
-
+  color: #fff;
+  background-color: #252526;
+  border: none;
 }
 
 .chat {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 70vh;
 }
 
 .message-box {
   border-radius: 25px;
-  margin: 20px 100px 10px 0;
-  flex: 0 1 auto;
+  margin: 20px 10px 10px 0;
   background-color: #252526;
   padding: 20px;
   font-size: 17px;
   color: #fff;
   cursor: pointer;
+  max-width: 40%;
+  word-break: break-all;
+}
+
+.message-box > span {
+  flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .send-button {
+    margin: 1px 20px 9px 10px;
+    flex: 1 1 auto;
+    border-radius: 15px;
+    width: 25%;
+  }
+
+  .text-input {
+    background-color: #252526;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 0 10px 50px;
+    flex: 1 1 auto;
+    width: 60%;
+  }
+
+  .chat {
+    min-height: 65vh;
+  }
+
+  .message-box {
+    border-radius: 25px;
+    margin: 20px 20px 10px 0;
+    flex: 1 1 auto;
+    background-color: #252526;
+    padding: 20px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+  }
 }

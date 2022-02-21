@@ -32,7 +32,6 @@ body {
   margin-top: 10px;
   display: flex;
   position: sticky;
-  top: 500px;
   bottom: 0;
   background-color: #000;
 }
@@ -61,6 +60,7 @@ body {
   align-items: flex-end;
   flex-direction: column;
   flex: 1 1 auto;
+  min-height: 78vh;
 }
 
 .message-box {
@@ -94,6 +94,10 @@ body {
     margin: 0 0 10px 50px;
     flex: 1 1 auto;
     width: 60%;
+  }
+
+  .chat {
+    min-height: 67vh;
   }
 
   .message-box {

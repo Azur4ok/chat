@@ -60,7 +60,7 @@ body {
   align-items: flex-end;
   flex-direction: column;
   flex: 1 1 auto;
-  min-height: 72vh;
+  min-height: 70vh;
 }
 
 .message-box {
